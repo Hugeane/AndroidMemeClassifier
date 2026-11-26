@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PickerFragment">
+
+    <fragment
+        android:id="@+id/PickerFragment"
+        android:name="com.shanshi.androidmemeclassifier.PickerFragment"
+        android:label="@string/picker_label"
+        tools:layout="@layout/fragment_picker">
+
+        <action
+            android:id="@+id/action_PickerFragment_to_GalleryFragment"
+            app:destination="@id/GalleryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GalleryFragment"
+        android:name="com.shanshi.androidmemeclassifier.GalleryFragment"
+        android:label="@string/gallery_label"
+        tools:layout="@layout/fragment_gallery">
+
+        <argument
+            android:name="treeUri"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_GalleryFragment_to_FullImageFragment"
+            app:destination="@id/FullImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FullImageFragment"
+        android:name="com.shanshi.androidmemeclassifier.FullImageFragment"
+        android:label="@string/full_image_label"
+        tools:layout="@layout/fragment_full_image">
+
+        <argument
+            android:name="imageUri"
+            app:argType="string" />
+    </fragment>
+</navigation>

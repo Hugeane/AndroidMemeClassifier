@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">表情包智能分类</string>
+    <string name="picker_label">选择目录</string>
+    <string name="picker_title">表情包智能分类</string>
+    <string name="picker_hint">选择一个包含表情包图片的文件夹，即可浏览其中的图片。</string>
+    <string name="pick_directory">选择图片目录</string>
+    <string name="gallery_label">图片列表</string>
+    <string name="full_image_label">查看图片</string>
+    <string name="empty_directory">该目录下没有找到图片</string>
+    <string name="load_failed">图片加载失败</string>
+    <string name="image_thumbnail_desc">图片缩略图</string>
+    <string name="image_full_desc">完整图片</string>
+</resources>
